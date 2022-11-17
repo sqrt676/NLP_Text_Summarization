@@ -14,7 +14,7 @@ import bs4 as bs
 import urllib.request
 import re
 
-wl=st.text_input("enter the wikepedia link you want to get summary for") or "https://en.wikipedia.org/wiki/Natural_language_processing"
+wl=st.text_input("Enter the wikepedia link you want to get summary for") or "https://en.wikipedia.org/wiki/Natural_language_processing"
 LoS = st.slider('In How many lines you want the summary?', 1, 30, 23)
 
 st.subheader("Technology used- NL ToolKit, BS4, LXML , developed in Python by Sumit Pandey")
