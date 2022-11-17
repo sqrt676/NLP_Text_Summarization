@@ -59,7 +59,7 @@ if (st.button("Click to Summarize",key="sum")):
             if word in word_frequencies.keys():
                 if len(sent.split(' ')) < 30:
                     if sent not in sentence_scores.keys():
-                    sentence_scores[sent] = word_frequencies[word]
+                        sentence_scores[sent] = word_frequencies[word]
                 else:
                     sentence_scores[sent] += word_frequencies[word]
 
