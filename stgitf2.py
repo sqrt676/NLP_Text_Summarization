@@ -2,7 +2,7 @@ import streamlit as st
 st.title('Sumit Pandey & team welcomes you on Smart Summary using techniques in NLTK')
 
 import nltk
-#nltk.download("popular")
+nltk.download("popular")
 st.header("Some famous wiki links you want to summarize")
 st.subheader("https://en.wikipedia.org/wiki/Narendra_Modi")
 st.subheader("https://en.wikipedia.org/wiki/Rahul_Gandhi")
