@@ -106,7 +106,7 @@ translator = Translator()
 
 translated_text = translator.translate(summary)
 #if (st.button("Click To view English Summary",key=2):
-st.write(translated_text.text)
-flag=st.button("Click To view English Summary",key=2)
+#st.write(translated_text.text)
+flag=st.button("Click To view (translated) English Summary",key=2)
 if (flag):
-    st.write("hi")
+    st.write(translated_text.text)
