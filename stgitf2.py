@@ -4,7 +4,7 @@ st.header("TEAM - DATAGEEKS welcomes you to our Smart Summary tool")
 
 import nltk
 #nltk.download("popular")
-st.header("Some famous Wikepedia links you want to summarize")
+st.header("Some famous Wikepedia links you want to summarize, by default NLP wiki is used")
 st.subheader("https://en.wikipedia.org/wiki/Narendra_Modi")
 st.subheader("https://en.wikipedia.org/wiki/Droupadi_Murmu")
 st.subheader("https://en.wikipedia.org/wiki/Bharatiya_Janata_Party")
@@ -14,7 +14,7 @@ import bs4 as bs
 import urllib.request
 import re
 
-wl=st.text_input("enter the Wikepedia link you want to get summary for")
+wl=st.text_input("enter the wikepedia link you want to get summary for") or "https://en.wikipedia.org/wiki/Natural_language_processing"
 LoS = st.slider('In How many lines you want the summary?', 1, 30, 23)
 
 st.subheader("Technology used- NL ToolKit, BS4, LXML , developed in Python by Sumit Pandey")
