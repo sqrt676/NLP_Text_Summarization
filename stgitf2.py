@@ -110,3 +110,11 @@ translated_text = translator.translate(summary)
 flag=st.button("Click To view (translated) English Summary",key=2)
 if (flag):
     st.write(translated_text.text)
+import pyttsx3
+if(st.button("click here to listen english summary")): 
+  engine = pyttsx3.init() 
+  voices = engine.getProperty('voices')
+  texttos = translated_text
+  engine.setProperty('voice', voices[1].id)
+  engine.say(texttos)
+  engine.runAndWait()
