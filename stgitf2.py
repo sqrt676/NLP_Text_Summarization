@@ -93,8 +93,8 @@ summary_sentences = heapq.nlargest(LoS, sentence_scores, key=sentence_scores.get
 summary = ' '.join(summary_sentences)
 
 #print(summary)
-if (st.button("Click To view Summary"):
-    st.write(summary)
+#if (st.button("Click To view Summary"):
+st.write(summary)
 
 
 
@@ -105,5 +105,5 @@ from googletrans import Translator
 translator = Translator()
 
 translated_text = translator.translate(summary)
-if (st.button("Click To view English Summary",key=2):
-    st.write(translated_text.text)
+#if (st.button("Click To view English Summary",key=2):
+st.write(translated_text.text)
