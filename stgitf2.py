@@ -1,11 +1,12 @@
 import streamlit as st
-st.title('Sumit Pandey & team welcomes you on Smart Summary using techniques in NLTK')
+st.title('SMART SUMMARY')
+st.header("TEAM - DATAGEEKS welcomes you to our Smart Summary tool")
 
 import nltk
 #nltk.download("popular")
 st.header("Some famous wiki links you want to summarize")
 st.subheader("https://en.wikipedia.org/wiki/Narendra_Modi")
-st.subheader("https://en.wikipedia.org/wiki/Rahul_Gandhi")
+st.subheader("https://en.wikipedia.org/wiki/Droupadi_Murmu")
 st.subheader("https://en.wikipedia.org/wiki/Bharatiya_Janata_Party")
 st.subheader("https://fr.wikipedia.org/wiki/Emmanuel_Macron")
 
@@ -14,7 +15,9 @@ import urllib.request
 import re
 
 wl=st.text_input("enter the wikepedia link you want to get summary for")
-LoS = st.slider('In How many lines you want the summary?', 1, 30, 25)
+LoS = st.slider('In How many lines you want the summary?', 1, 30, 23)
+
+st.subheader("Technology used- NL ToolKit, BS4, LXML , developed in Python by Sumit Pandey")
 
 
 scraped_data = urllib.request.urlopen(wl)
