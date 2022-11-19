@@ -128,3 +128,9 @@ response = co.generate(
 sweetsummary = response.generations[0].text
 st.subheader("Conclusive summary below: with help of COHERE")
 st.write(sweetsummary)
+
+import time
+tss=time.time()
+print(tss)
+print(wl)
+st.wtite(tss)
