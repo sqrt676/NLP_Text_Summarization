@@ -121,10 +121,10 @@ if (flag):
 response = co.generate( 
     model='xlarge', 
     prompt = prompt,
-    max_tokens=40, 
+    max_tokens=80, 
     temperature=0.8,
     stop_sequences=["--"])
 
 sweetsummary = response.generations[0].text
-st.subheader("sweet summary below:")
+st.subheader("Conclusive summary below: with help of COHERE")
 st.write(sweetsummary)
