@@ -1,4 +1,8 @@
 import streamlit as st
+
+import cohere
+co = cohere.Client("kisfjnNLG6V7fG0sSCpqs1ZoL1pf5a5sLH81oYv2")
+
 st.title('SMART SUMMARY')
 st.header("TEAM - DATAGEEKS welcomes you to our Smart Summary tool")
 
@@ -94,7 +98,7 @@ import heapq
 summary_sentences = heapq.nlargest(LoS, sentence_scores, key=sentence_scores.get)
 
 summary = ' '.join(summary_sentences)
-
+prompt=summary
 #print(summary)
 #if (st.button("Click To view Summary"):
 st.write(summary)
@@ -113,3 +117,14 @@ translated_text = translator.translate(summary)
 flag=st.button("Click To view (translated) English Summary",key=2)
 if (flag):
     st.write(translated_text.text)
+   
+response = co.generate( 
+    model='xlarge', 
+    prompt = prompt,
+    max_tokens=40, 
+    temperature=0.8,
+    stop_sequences=["--"])
+
+sweetsummary = response.generations[0].text
+st.subheader("sweet summary below:")
+st.write(sweetsummary)
