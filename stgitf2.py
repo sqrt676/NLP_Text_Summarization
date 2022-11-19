@@ -133,4 +133,4 @@ import time
 tss=time.time()
 print(tss)
 print(wl)
-st.wtite(tss)
+st.write(tss)
