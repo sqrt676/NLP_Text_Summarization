@@ -37,8 +37,7 @@ for p in paragraphs:
     article_text += p.text
 
 
-
-
+artTxt=article_text
 
 print(len(article_text))
 article_text = re.sub(r'\[[0-9]*\]', ' ', article_text)
@@ -98,7 +97,7 @@ import heapq
 summary_sentences = heapq.nlargest(LoS, sentence_scores, key=sentence_scores.get)
 
 summary = ' '.join(summary_sentences)
-prompt=summary
+prompt=artTxt
 #print(summary)
 #if (st.button("Click To view Summary"):
 st.write(summary)
