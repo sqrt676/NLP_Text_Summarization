@@ -7,7 +7,7 @@ st.title('SMART SUMMARY')
 st.header("TEAM - DATAGEEKS welcomes you to our Smart Summary tool")
 
 import nltk
-#nltk.download("popular")
+nltk.download("popular")
 st.header("Some famous Wikepedia links OR any public article link you want to summarize, by default NLP wikipedia is summarized")
 st.subheader("https://en.wikipedia.org/wiki/Narendra_Modi")
 st.subheader("https://en.wikipedia.org/wiki/Droupadi_Murmu")
