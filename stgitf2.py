@@ -1,8 +1,5 @@
 import streamlit as st
 
-import cohere
-co = cohere.Client("kisfjnNLG6V7fG0sSCpqs1ZoL1pf5a5sLH81oYv2")
-
 st.title('SMART SUMMARY')
 st.header("TEAM - DATAGEEKS welcomes you to our Smart Summary tool")
 
@@ -117,19 +114,3 @@ flag=st.button("Click To view (translated) English Summary",key=2)
 if (flag):
     st.write(translated_text.text)
    
-response = co.generate( 
-    model='xlarge', 
-    prompt = prompt,
-    max_tokens=80, 
-    temperature=0.8,
-    stop_sequences=["--"])
-
-sweetsummary = response.generations[0].text
-st.subheader("Conclusive summary below: with help of COHERE")
-st.write(sweetsummary)
-
-import time
-tss=time.time()
-print(tss)
-print(wl)
-st.write(tss)
