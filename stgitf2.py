@@ -10,8 +10,7 @@ nltk.download("popular")
 st.header("Some famous Wikepedia links are listed below")
 st.write("by default the tool summarizes a NLP article published on wikipedia")
 st.write("https://en.wikipedia.org/wiki/Narendra_Modi")
-st.write("https://en.wikipedia.org/wiki/Droupadi_Murmu")
-st.write("https://en.wikipedia.org/wiki/Bharatiya_Janata_Party")
+st.write("https://en.wikipedia.org/wiki/Mahabharata")
 st.write("https://fr.wikipedia.org/wiki/Emmanuel_Macron")
 
 import bs4 as bs
