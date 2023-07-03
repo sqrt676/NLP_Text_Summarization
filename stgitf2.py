@@ -1,7 +1,9 @@
 import streamlit as st
 
 st.title('SMART SUMMARY')
-st.header("TEAM - DATAGEEKS welcomes you to our Smart Summary tool")
+st.header("Welcome to my Smart Summary tool")
+st.header("What it does?")
+st.write("It is an NLP based tool. Provide with a public URL, the application will extract data from the aforementioned website/URL and provide you the summary as per your tuned parameters. Isn't it cool!! More features are to be added soon")
 
 import nltk
 nltk.download("popular")
