@@ -7,11 +7,12 @@ st.write("It is an NLP based tool. Provide with a public URL, the application wi
 
 import nltk
 nltk.download("popular")
-st.header("Some famous Wikepedia links are listed below, by default the tool summarizes a NLP article published on wikipedia")
-st.subheader("https://en.wikipedia.org/wiki/Narendra_Modi")
-st.subheader("https://en.wikipedia.org/wiki/Droupadi_Murmu")
-st.subheader("https://en.wikipedia.org/wiki/Bharatiya_Janata_Party")
-st.subheader("https://fr.wikipedia.org/wiki/Emmanuel_Macron")
+st.header("Some famous Wikepedia links are listed below")
+st.write("by default the tool summarizes a NLP article published on wikipedia")
+st.write("https://en.wikipedia.org/wiki/Narendra_Modi")
+st.write("https://en.wikipedia.org/wiki/Droupadi_Murmu")
+st.write("https://en.wikipedia.org/wiki/Bharatiya_Janata_Party")
+st.write("https://fr.wikipedia.org/wiki/Emmanuel_Macron")
 
 import bs4 as bs
 import urllib.request
