@@ -1,13 +1,13 @@
 import streamlit as st
 
-st.title('SMART SUMMARY')
+st.title('SMART SUMMARY by SQRT676')
 st.header("Welcome to my Smart Summary tool")
 st.header("What it does?")
 st.write("It is an NLP based tool. Provide with a public URL, the application will extract data from the aforementioned website/URL and provide you the summary as per your tuned parameters. Isn't it cool!! More features are to be added soon")
 
 import nltk
 nltk.download("popular")
-st.header("Some famous Wikepedia links OR any public article link you want to summarize, by default NLP wikipedia is summarized")
+st.header("Some famous Wikepedia links are listed below, by default the tool summarizes a NLP article published on wikipedia")
 st.subheader("https://en.wikipedia.org/wiki/Narendra_Modi")
 st.subheader("https://en.wikipedia.org/wiki/Droupadi_Murmu")
 st.subheader("https://en.wikipedia.org/wiki/Bharatiya_Janata_Party")
